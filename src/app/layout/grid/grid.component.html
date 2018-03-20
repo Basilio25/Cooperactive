@@ -1,0 +1,92 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Consultar Doadores'" [icon]="'fa-table'"></app-page-header>
+        <head>
+            <script src="/lib/angular-1.4.8.min.js"></script> 
+            <script>
+                    angular.module('grid', [])
+                      .controller('InserirFiltrong', ['$scope', function($scope) {
+                        $scope.count = 0;
+                        $scope.InserirFiltro = function() {
+                          $scope.alert("TESTE");
+                        };
+                      }]);
+            </script>          
+        </head>
+        <div ng-controller="InserirFiltrong">
+            <div class="form-group col-md-3">
+                <!--Filtrar a pesquisa--><label>Filtrar</label>
+
+                <select class="form-control" style="width:254px;" ng-change="InserirFiltro()" id="cbbFiltro" name="cbbFiltro">
+                        <option disabled selected>--Selecione um filtro--</option>
+                        <option value="Nome do contribuinte">Nome do contribuinte</option>
+                        <option value="CPF do contribuinte">CPF do contribuinte</option>
+                </select>
+
+            </div>
+        </div>
+
+            <!-- Área de pesquisa -->
+            <div class="form-group col-md-3" style="display:inline-block;">    
+                    <label>Pesquisar:</label>      
+                    <input class="form-control" placeholder="--Selecione um filtro--" style="width:284px;height:38px;" id="inputFiltro" name="inputFiltro">   
+            </div>
+            <input type="button" class="btn btn-primary" style="margin-left:22px;cursor:pointer;height:38px;margin-top:-0.3em;" value="Buscar">
+
+    
+     <table class="table">
+        <thead class="thead-dark">
+            <!-- Pegando as informações da tblPessoa -->
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Nascimento</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Número</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Complemento</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Referência</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+                <td>#LINHA1</td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+                <td>#LINHA2</td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+                <td>#LINHA3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,71 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Cadastro de Doadores'" [icon]="'fa-edit'"></app-page-header>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            <form role="form">
+                <fieldset class="form-group">
+                    
+                    <!--Questionar sobre a label--><label><label style="color:red;">*</label>Contribuinte</label>
+                    <input class="form-control" placeholder="Nome do contribuinte" style="width:384px;" id="" name="">
+                    <br/>
+
+                    <!--Questionar sobre a label--><label>Data de nascimento:</label>
+                    <input class="form-control" type="date" style="width:164px;" id="" name="">
+                    <br/>
+
+                    <!--Questionar sobre a label--><label><label style="color:red;">*</label>Sexo:</label>
+                    <select class="form-control" style="width:164px;" id="" name="">
+                        <option disabled selected>--Selecione--</option>
+                        <option value="M">M</option>
+                        <option value="F">F</option>
+                    </select>
+                    <br/>
+
+                    <!--Questionar sobre a label--><label><label style="color:red;">*</label>Endereço:</label>
+                    <input class="form-control" placeholder="Endereço do contribuinte" style="width:384px;" id="" name="">
+                    <br/>
+
+                    <!--Questionar sobre a label--><label><label style="color:red;">*</label>Número:</label>
+                    <input class="form-control" placeholder="Número da casa" style="width:164px;" id="" name="">
+                    <br/>
+
+                    <!--Questionar sobre a label--><label><label style="color:red;">*</label>Bairro:</label>
+                    <input class="form-control" placeholder="Bairro" style="width:284px;" id="" name="">
+                    <br/>
+
+                    <!--Questionar sobre a label--><label>Complemento:</label>
+                    <input class="form-control" placeholder="Complemento" style="width:284px;" id="" name="">
+                    <br/>
+
+                    <!--Questionar sobre a label--><label style="color:red;">*</label><label>Cidade:</label>
+                    <input class="form-control" placeholder="Cidade" style="width:284px;" id="" name="">
+                    <br/>
+
+                    <!--Questionar sobre a label--><label>Referência:</label>
+                    <textarea class="form-control" placeholder="Referência" style="width:294px;" id="" name=""></textarea>
+                    <br/>
+
+                </fieldset>
+
+                <!--<fieldset class="form-group">
+                    <label></label>
+                </fieldset> EXEMPLO DE SETOR-->
+
+                <button type="submit" class="btn btn-success" style="cursor:pointer;"><span class="glyphicon glyphicon-ok">Cadastrar</span></button>
+                <!-- ? <button type="reset" class="btn btn-secondary">Reset Button</button>-->
+
+            </form>
+
+        </div>
+
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label style="color:red;">*</label><label> (Campo obrigatório)</label>
+                </fieldset>
+            </form>
+        </div>
+    
+</div>
