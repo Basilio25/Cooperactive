@@ -1,1 +1,0 @@
-# GPES-CooperativeDonations-Angular5
